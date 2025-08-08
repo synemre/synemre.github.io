@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My First VR Game</title>
+    <meta name="description" content="A simple VR scene using A-Frame.">
+    <!-- A-Frame VR library -->
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <!-- This is your VR scene. All of your 3D objects go in here. -->
+    <a-scene>
+      <!-- Background: A 360-degree sky color. -->
+      <a-sky color="#6EBAA7"></a-sky>
+
+      <!-- Floor: A flat plane rotated to be horizontal. -->
+      <a-plane 
+        position="0 0 -4" 
+        rotation="-90 0 0" 
+        width="10" 
+        height="10" 
+        color="#7BC8A4">
+      </a-plane>
+
+      <!-- A red box. -->
+      <!-- position is "x y z". The negative z value moves it in front of you. -->
+      <a-box 
+        position="-1 0.5 -3" 
+        rotation="0 45 0" 
+        color="#D95B5B">
+      </a-box>
+
+      <!-- A blue sphere. -->
+      <a-sphere 
+        position="0 1.25 -5" 
+        radius="1.25" 
+        color="#4CC3D9">
+      </a-sphere>
+
+      <!-- A yellow cylinder. -->
+      <a-cylinder 
+        position="1 0.75 -3" 
+        radius="0.5" 
+        height="1.5" 
+        color="#FFC65D">
+      </a-cylinder>
+
+    </a-scene>
+  </body>
+</html>
